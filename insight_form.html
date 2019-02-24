@@ -1,12 +1,106 @@
 <html>
 
+  <!-- head -->
   <head>
+    <!-- Page Title -->
     <title>Insight</title>
+    <!-- CSS -->
+    <style>
+    </style>
+    <!-- Page Heading -->
     <h1>Tell us about your project</h1>
     <p>You can refer back to this insight form at anytime and add more info</p>
   </head>
 
 
+  <!--Body -->
+  <body>
+
+<!-- Page 1 Contact Info-->
+
+
+    <!-- New or Existing Buttons -->
+    <button type-"button">New Project</button>
+      <p>or</p>
+    <button type="button">Existing Project</button>
+      <br>
+      <br>
+      <br>
+    <!-- Contact Info Form -->
+    <label>About You</label>
+    <form action="/convplan/insight_form_replies.html" method="POST">
+      <label for="first name"></label>
+      <input type="text" name="first name" id="first name" value="First Name" required>
+        <br>
+      <label for="last name"></label>
+      <input type="text" name="last name" id="last name" value="Last Name" required>
+        <br>
+      <label for="title"></label>
+      <input type="text" name="title" id="title" value="Title" required>
+        <br>
+      <label for="company"></label>
+      <input type="text" name="company" id="company" value="Company" required>
+        <br>
+      <label for="phone"></label>
+      <input type="text" name="phone" id="phone" value="Phone" required pattern="[0-9]{10}">
+        <br>
+      <label for="email"></label>
+      <input type="text" name="email" id="email" value="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <br>
+        <br>
+        <br>
+      <!-- Role checkbox -->
+      <label for="dm role">Which decision-making role best describes you?</label>
+      <select id="dm role" name="dm role">
+        <option value="user">End User</option>
+        <option value="evaluator">Evaluator</option>
+        <option value="developer">Developer</option>
+        <option value="decision maker">Decision Maker</option>
+        <option value="other">Other</option>
+      </select>
+        <br>
+        <br>
+        <br>
+
+
+<!-- Page 2 Project / Use Case Info-->
+      <!-- Project Name Input Box -->
+      <form action="/convplan/insight_form_replies.html" method="POST">
+      <label for="project name">Does this project have a name?</label>
+      <input type="text" name="project name" id="project name">
+        <br>
+        <br>
+        <br>
+      <!-- Problem Textarea Element -->
+      <label for="use case">Tell us about the problem you're out to solve:</label>
+          <br>
+        <textarea id="use case" name="use case" rows="8" cols="80">
+        </textarea>
+          <br>
+          <br>
+          <br>
+      <!-- Current Solution Textarea Element -->
+      <label for="current solution">Explain your current solution to this problem:</label>
+          <br>
+        <textarea id="current solution" name="current solution" rows="8" cols="80">
+        </textarea>
+          <br>
+          <br>
+          <br>
+      <!-- Ideal Solution Textarea Element -->
+      <label for="ideal solution">Describe your ideal solution to this problem:</label>
+          <br>
+        <textarea id="ideal solution" name="ideal solution" rows="8" cols="80">
+        </textarea>
+          <br>
+          <br>
+          <br>
+
+    </form>
+
+
+
+  </body>
 
 
 
